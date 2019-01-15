@@ -1,3 +1,4 @@
+
 // Jenkinsfile scripted pipeline - 1/11/19 a
 	node {
 	    stage ('checkout') {
@@ -5,7 +6,7 @@
 	    }
 	    stage ('produce') {
 	        // Notify DevOptics that this run produced plugin-a.txt.
-	        gateProducesArtifact type: “docker”, id: “789”
+	        gateProducesArtifact file: 'plugin-1000.txt'
 	          sh 'sleep 45'
 	    }       
 	}
