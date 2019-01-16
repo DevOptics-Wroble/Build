@@ -6,7 +6,7 @@
 	    }
 	    stage ('produce') {
 	        // Notify DevOptics that this run produced plugin-a.txt.
-	        gateProducesArtifact file: 'plugin-1000.txt'
+	        gateProducesArtifact file: 'plugin-1001.txt'
 	          sh 'sleep 45'
 	    }       
 	}
